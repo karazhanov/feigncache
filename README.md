@@ -1,4 +1,4 @@
-#feign.cache
+# feign.cache
 Library for caching feign request.
 
 Using proxy pattern for wrap feign interface.
@@ -25,7 +25,7 @@ For using cache for feign you must wrap REST client.
     IUserRest userCollector = 
                  Feign.builder().target(IUserRest.class, url);
   ```
- #### Without cache
+ #### With cache
  ```java
     IUserRest userCollector = 
         RestClientCache.wrap(
